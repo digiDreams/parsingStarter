@@ -30,21 +30,6 @@ struct Place: Identifiable, Decodable {
     }
 }
 
-
-
-//func getShopType(shop: shopType) -> String? {
-//    switch weather {
-//    case .coffeew:
-//        return
-//    case .wind(let speed) where speed < 10:
-//        return "meh"
-//    case .cloud, .wind:
-//        return "dislike"
-//    case .rain, .snow:
-//        return "hate"
-//    }
-//}
-
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
@@ -55,13 +40,15 @@ func load<T: Decodable>(_ filename: String) -> T {
         data = try Data(contentsOf: file)
     } catch {
         fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode(T.self, from: data)
-        } catch {
-            fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-        }
     }
-    
-    var coworkPlaces: [Coworkplaces] = load("places.json")
-    var Coworkplaces : [String] = [""]
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
+}
+
+var places: [Place] = load("places.json")
+
+
