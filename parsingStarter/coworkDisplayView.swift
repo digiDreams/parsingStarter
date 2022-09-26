@@ -12,11 +12,30 @@ struct coworkDisplayView: View {
     var body: some View {
         
         VStack {
-            Text(place.name)
+            Text(place.name.uppercased())
                 .bold()
                 .padding()
             // AsyncImage API random
-            Text(place.address)
+//             AsyncImage(url: URL(string: "https://example.com/icon.png"))
+               
+            
+             AsyncImage(url: URL(string: "https://simplon.co/images/logo.svg")) { image in
+                 image.resizable()
+             .scaledToFit()
+             .frame(width: 200, height: 200)
+             } placeholder: {
+                 ProgressView()
+             }
+             .frame(width: 50, height: 50)
+             
+            Text(place.address.uppercased())
+                .padding()
+            HStack {
+                Text("Site:")
+                    .bold()
+                Text(place.url)
+            }.padding()
+            Text("WiFi")
             
         }.navigationTitle(Text(place.name))
       
