@@ -15,9 +15,10 @@ struct listView: View {
                 place in
                 NavigationLink(destination: coworkDisplayView(place: place)) {
                     VStack(alignment: .leading){
-                        Text(place.name.uppercased())
+                        Text(place.name.uppercased()) //.sorted()
                             .bold()
                         Text(place.address)
+//                        Text("Type d'établissement: \(place.type.rawValue)")
                     } //.navigationTitle(place.name)
                 }
                 

@@ -14,20 +14,18 @@ struct coworkDetailView: View {
         
         NavigationView {
             VStack {
-                        Picker("", selection: $selectDisplay) {
-                            Text("Map").tag(0)
-                            Text("List").tag(1)
-        
-                        }
-                        .pickerStyle(.segmented)
+                Picker("", selection: $selectDisplay) {
+                    Text("Map").tag(0)
+                    Text("List").tag(1)
+                    
+                }
+                .pickerStyle(.segmented)
                 
                 if selectDisplay == 0 {
-                                   mapView()
-                                       .padding()
-                               } else {
-                                   listView() // MapView()
-                                       .padding()
-                               }
+                    mapView()
+                } else {
+                    listView() // MapView()
+                }
                 
             }.navigationTitle("Coworking spaces")
         }

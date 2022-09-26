@@ -11,8 +11,14 @@ struct coworkDisplayView: View {
     let place: Place
     var body: some View {
         
+        VStack {
             Text(place.name)
-            .navigationTitle(Text(place.name))
+                .bold()
+                .padding()
+            // AsyncImage API random
+            Text(place.address)
+            
+        }.navigationTitle(Text(place.name))
       
     }
 }
