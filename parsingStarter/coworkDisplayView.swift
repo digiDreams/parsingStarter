@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct coworkDisplayView: View {
+    let place: Place
     var body: some View {
-        List {
-            ForEach(places) { place in
-                Text(place.name)
-            }
-        }.navigationTitle("CoworkPlaces")
+        
+            Text(place.name)
+            .navigationTitle(Text(place.name))
+      
     }
 }
 
 struct coworkDisplayView_Previews: PreviewProvider {
     static var previews: some View {
-        coworkDisplayView()
+        coworkDisplayView(place: places[0])
     }
 }

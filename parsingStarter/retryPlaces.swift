@@ -16,9 +16,9 @@ import Foundation
 struct Place: Identifiable, Decodable {
     var id: Int
     var name: String
-    var latitude: Double
-    var longitude: Double
-    var adress: String
+    var lat: Double
+    var lon: Double
+    var address: String
     var type: shopType // créer enum derrière (me first intention: Array)
     var url: String
     var wifi: Bool

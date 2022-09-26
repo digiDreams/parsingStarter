@@ -11,7 +11,7 @@ import SwiftUI
 struct parsingStarterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            coworkDetailView()
         }
     }
 }

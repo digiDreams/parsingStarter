@@ -14,6 +14,9 @@
 		7BA79CC728E1936C0047A1D3 /* retryPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA79CC628E1936C0047A1D3 /* retryPlaces.swift */; };
 		7BA79CC928E194F60047A1D3 /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BA79CC828E194F60047A1D3 /* places.json */; };
 		7BA79CCB28E1A6020047A1D3 /* coworkDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA79CCA28E1A6020047A1D3 /* coworkDisplayView.swift */; };
+		7BD5BF8128E1A9C500576F21 /* coworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5BF8028E1A9C500576F21 /* coworkDetailView.swift */; };
+		7BD5BF8328E1AC2200576F21 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5BF8228E1AC2200576F21 /* mapView.swift */; };
+		7BD5BF8528E1AC3000576F21 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5BF8428E1AC3000576F21 /* listView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		7BA79CC628E1936C0047A1D3 /* retryPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retryPlaces.swift; sourceTree = "<group>"; };
 		7BA79CC828E194F60047A1D3 /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = places.json; path = ../../../Documents/places.json; sourceTree = "<group>"; };
 		7BA79CCA28E1A6020047A1D3 /* coworkDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coworkDisplayView.swift; sourceTree = "<group>"; };
+		7BD5BF8028E1A9C500576F21 /* coworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coworkDetailView.swift; sourceTree = "<group>"; };
+		7BD5BF8228E1AC2200576F21 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
+		7BD5BF8428E1AC3000576F21 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				7BA79CC828E194F60047A1D3 /* places.json */,
 				7BA79CC628E1936C0047A1D3 /* retryPlaces.swift */,
 				7BA79CCA28E1A6020047A1D3 /* coworkDisplayView.swift */,
+				7BD5BF8028E1A9C500576F21 /* coworkDetailView.swift */,
+				7BD5BF8228E1AC2200576F21 /* mapView.swift */,
+				7BD5BF8428E1AC3000576F21 /* listView.swift */,
 				7BA79CBC28E1904D0047A1D3 /* Preview Content */,
 			);
 			path = parsingStarter;
@@ -150,9 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA79CCB28E1A6020047A1D3 /* coworkDisplayView.swift in Sources */,
+				7BD5BF8128E1A9C500576F21 /* coworkDetailView.swift in Sources */,
 				7BA79CB828E1904A0047A1D3 /* ContentView.swift in Sources */,
 				7BA79CB628E1904A0047A1D3 /* parsingStarterApp.swift in Sources */,
+				7BD5BF8528E1AC3000576F21 /* listView.swift in Sources */,
 				7BA79CC728E1936C0047A1D3 /* retryPlaces.swift in Sources */,
+				7BD5BF8328E1AC2200576F21 /* mapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
